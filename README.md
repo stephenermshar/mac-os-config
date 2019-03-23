@@ -16,3 +16,5 @@ Clone to `~`, run setup.sh
 - [ ] git based installtions
 - [ ] app store installations (if there is an api and on Mac OS)
 - [ ] include `--resume-from` flag or flag to only run subscripts (which might rely on variables in `setup.sh`)
+
+Inspired by [sheldonkwoodward/.dotfiles](https://github.com/sheldonkwoodward/.dotfiles)
