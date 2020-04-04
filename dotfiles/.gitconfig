@@ -4,7 +4,7 @@
 [user]
     # Set in ~/.gitconfig_user
 [core]
-	excludesfile = /Users/stephen/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
