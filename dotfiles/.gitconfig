@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [include]
-    path = ~/.gitconfig_local
+    path = ~/.gitconfig_user
 [user]
-    # Set in ~/.gitconfig_local
+    # Set in ~/.gitconfig_user
 [core]
 	excludesfile = /Users/stephen/.gitignore_global
 [difftool "sourcetree"]
