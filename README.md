@@ -9,7 +9,7 @@ For a fully automated setup run `bash ~/.dotfiles/setup.sh`.
 
 ### Dotfile Setup Only
 
-Create a file `~/.dotfiles/dotfiles/.gitconfig_local` with the following contents
+Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
 ```
 [user]
     name = <name>
@@ -17,13 +17,13 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_local` with the following content
 
 ```
 
-Run `bash ~/.dotfilessetup-subscripts/symlinks.sh`.
+Run `bash ~/.dotfiles/subscripts/symlinks.sh`.
 
 
 ## Goals
 
-- [ ] install zsh
-- [ ] symlink dotfiles
+- [x] install zsh
+- [x] symlink dotfiles
 - [ ] curl based installations
 - [ ] brew based installtions
 - [ ] update preinstalled software (git, vim, etc.)
