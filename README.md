@@ -17,7 +17,7 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
 
 ```
 
-Run `bash ~/.dotfilessetup-subscripts/symlinks.sh`.
+Run `bash ~/.dotfiles/subscripts/symlinks.sh`.
 
 
 ## Goals
