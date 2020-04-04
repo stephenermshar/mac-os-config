@@ -1,6 +1,24 @@
 # Mac OS Automatic Setup
 
-Clone to `~`, run setup.sh
+## Instructions
+
+Clone this repository with `git clone https://github.com/stephenermshar/mac-os-config.git ~/.dotfiles`.
+
+For a fully automated setup run `bash ~/.dotfiles/setup.sh`.
+
+
+### Dotfile Setup Only
+
+Create a file `~/.dotfiles/dotfiles/.gitconfig_local` with the following contents
+```
+[user]
+    name = <name>
+    email = <email> 
+
+```
+
+Run `bash ~/.dotfilessetup-subscripts/symlinks.sh`.
+
 
 ## Goals
 

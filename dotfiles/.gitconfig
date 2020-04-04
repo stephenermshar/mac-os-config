@@ -1,0 +1,53 @@
+# This is Git's per-user configuration file.
+[include]
+    path = ~/.gitconfig_local
+[user]
+    # Set in ~/.gitconfig_local
+[core]
+	excludesfile = /Users/stephen/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gerrit]
+	url = ssh://sermshar@asterix-gerrit.ics.uci.edu:29418/
+[alias]
+	st = status
+	ch = checkout
+	ac = "!git add .  && git commit -m \"$1\" #"
+	pu = "push -u origin HEAD"
+	up = "!git fetch origin $1:$1 #"
+	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(bold blue)<%an>%Creset %Cgreen(%cd) %n%n    %s%n%Creset' --abbrev-commit
+	ff = merge --ff-only
+	nff = merge --no-ff
+[credential]
+	helper = --get-all
+[color]
+	ui = true
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff]
+	tool = vscode
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
