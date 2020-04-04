@@ -1,6 +1,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="terminalparty3"
+ZSH_THEME="custom"
 source $ZSH/oh-my-zsh.sh
 
 # pyenv / virtualenv

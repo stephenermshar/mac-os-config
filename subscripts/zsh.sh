@@ -6,5 +6,9 @@ chsh -s /bin/zsh
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# set zsh theme
-echo 'export ZSH_THEME="terminalparty"' >> $HOME/.zshrc
+# add custom zsh theme
+ln -sv ~/.dotfiles/custom.zsh-theme ~/.oh-my-zsh/themes
+
+# refresh the ~/.zshrc
+source ~/.zshrc
+
