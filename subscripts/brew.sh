@@ -5,4 +5,4 @@
 
 # use brew to install all the things
 # https://apple.stackexchange.com/a/280097
-brew bundle --file $CD/Brewfile
+brew bundle --file ~/.dotfiles/Brewfile
