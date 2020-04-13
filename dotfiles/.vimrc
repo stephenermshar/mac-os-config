@@ -6,4 +6,6 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 set showmatch
+set spelllang=en
+set spell
 
