@@ -14,7 +14,7 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
 [user]
     name = <name>
     email = <github noreply email> 
-    signingkey = <github gpg key>
+    signingkey = <github gpg key id>
 ```
 
 Note that the git email must match the email used when generating the gpg key. 
