@@ -45,3 +45,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+alias td=todoist
