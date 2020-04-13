@@ -17,6 +17,10 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
     signingkey = <github gpg key>
 ```
 
+Note that the git email must match the email used when generating the gpg key. 
+For GitHub this was set to the public noreply address so that github could display verified commits.
+See [GitHub's Managing commit signature verification article](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) for more information.
+
 Run `bash ~/.dotfiles/subscripts/symlinks.sh`.
 
 
