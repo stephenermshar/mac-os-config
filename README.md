@@ -13,7 +13,7 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
 ```
 [user]
     name = <name>
-    email = <email> 
+    email = <github noreply email> 
     signingkey = <github gpg key>
 ```
 
