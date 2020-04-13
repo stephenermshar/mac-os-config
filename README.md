@@ -14,7 +14,7 @@ Create a file `~/.dotfiles/dotfiles/.gitconfig_user` with the following contents
 [user]
     name = <name>
     email = <email> 
-
+    signingkey = <github gpg key>
 ```
 
 Run `bash ~/.dotfiles/subscripts/symlinks.sh`.
