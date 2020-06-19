@@ -46,3 +46,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 alias td=todoist
+export PATH="/usr/local/opt/ruby/bin:$PATH"

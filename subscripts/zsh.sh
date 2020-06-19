@@ -7,8 +7,7 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # add custom zsh theme
-ln -sv ~/.dotfiles/custom.zsh-theme ~/.oh-my-zsh/themes
+ln -sv $HOME/.dotfiles/symlinks/custom.zsh-theme $HOME/.oh-my-zsh/themes
 
-# refresh the ~/.zshrc
-source ~/.zshrc
-
+# refresh the $HOME/.zshrc
+source $HOME/.zshrc
