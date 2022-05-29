@@ -1,7 +1,8 @@
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="custom"
+#ZSH_THEME="custom"
 source $ZSH/oh-my-zsh.sh
+PROMPT='%B%(?,%F{10}^%f,%F{9}^%f)%b %F{8}[%*]%f %2~ %#  '
 
 # pyenv / virtualenv
 # eval "$(pyenv init -)"
@@ -47,3 +48,20 @@ unset __conda_setup
 
 alias td=todoist
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+if [ -e /Users/stephen/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/stephen/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH="/Users/stephen/.nix-profile/bin/neuron:$PATH"
+alias emacs=/usr/local/Cellar/emacs/26.3/bin/emacs
+
+PATH="/Users/stephen/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/stephen/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/stephen/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/stephen/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/stephen/perl5"; export PERL_MM_OPT;
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+eval "$(rbenv init -)"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+eval "$(pyenv init -)"
